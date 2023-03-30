@@ -304,6 +304,16 @@ body ::-webkit-scrollbar-thumb{
     margin-top: 10px;
  }
 
+ #service .box h2{
+    margin-top: 20px;
+    text-align: center;
+ }
+
+ #service .box p{
+    margin-top: 20px;
+    text-align: center;
+ }
+
 
 
 

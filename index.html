@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App-Delivery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
+    <!-- Aqui começa o home -->
+
             <header class="max-width bg" id="home">
                 <div class="container">
                     <div class="menu">
                         <div class="logo"></div>
                         <div class="desktop-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">Sobre</a></li>
                                 <li><a href="#">Serviços</a></li>
                                 <li><a href="#">Menu</a></li>
                                 <li><a href="#">Contato</a></li>         
@@ -24,7 +27,7 @@
                 </div>
                     <div class="call">
                         <div class="left">
-                            <img src="image/image01.png" alt="">
+                            <img src="image/02-500.jpg" alt="" style="border-radius: 30px;">
                         </div>
                         <div class="right">
                             <h1 class="color-verde text-gd"> One Beck</h1>
@@ -34,6 +37,64 @@
                         </div>
                     </div>
               </div>
-        </header>  
+            <button id="back-to-top">^</button>
+        </header> 
+        
+         <!-- Aqui começa o about -->
+
+       <section class="max-width bg" id="about">
+        <div class="container">
+            <div class="call">
+                <div class="left">
+                    <span class="text-title color-verde"> Sobre Nós</span>
+                    <h2 class="text-md color-cinza-1">Nós cozinhamos a comida mais saborosa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non velit eum nostrum quasi consectetur? Corporis, ipsa, repellendus, corrupti maxime laboriosam obcaecati cupiditate neque libero facere expedita architecto ullam officia deleniti?</p>
+                    <button>Saiba Mais</button>
+                </div>
+                <div class="right">
+                    <img src="image/03-400.jpg" alt="">
+                </div>
+            </div>
+        </div>
+       </section>
+
+        <!-- Aqui começa o service -->
+        <section class="max-width bg" id="service">
+            <div class="container">
+                <div class="content">
+                    <div class="titulo">
+                        <span class="text-title color-verde">Ofertas</span>
+                        <h2 class="text-md color-cinza-1">Nossos Serviços</h2>
+                    </div>
+                    <div class="down">
+                        <div class="box">
+                            <i class="fa fa-cutlery text-gd color-verde"></i>
+                            <h2>A melhor comida </h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ab reprehenderit et, possimus suscipit error ut fuga.</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-cookie-bite text-gd color-verde"></i>
+                            <h2>A maconha rapida </h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ab reprehenderit et, possimus suscipit error ut fuga.</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa fa-motorcycle text-gd color-verde" ></i>
+                            <h2>Entrega</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ab reprehenderit et, possimus suscipit error ut fuga.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <script>
+
+        //botão back-to-top
+
+        var btn = document.querySelector("#back-to-top");
+
+        btn.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        })
+       </script>  
 </body>
 </html>
